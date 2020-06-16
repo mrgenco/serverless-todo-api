@@ -10,9 +10,7 @@ Cloud Run and Cloud Datastore platforms.
 
 [Spring Cloud GCP](https://spring.io/projects/spring-cloud-gcp)  helps a lot while developing Google Cloud Platform (GCP) applications with Spring Framework by providing auto-configuration facilities. 
 
-### Setup (Local and Cloud)
-
-### Run this project on local machine :
+### Setup for local machine :
  
  1. Login to your [GCP(Google Cloud Platform) account](https://cloud.google.com/). 
 
@@ -34,7 +32,7 @@ Cloud Run and Cloud Datastore platforms.
     mvn spring-boot:run
     ``` 
     
-### Run this project on Cloud Run : 
+### Setup for Cloud Run : 
 Follow first 5 steps above and run following command
  ``` sh
 mvn jib:build
