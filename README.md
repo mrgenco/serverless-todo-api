@@ -1,6 +1,6 @@
 # serverless-todo-api
 
-### Some Background
+### Background
 I created this simple SpringBoot application for experimenting
 Cloud Run and Cloud Datastore platforms.
 
@@ -10,9 +10,9 @@ Cloud Run and Cloud Datastore platforms.
 
 [Spring Cloud GCP](https://spring.io/projects/spring-cloud-gcp)  helps a lot while developing Google Cloud Platform (GCP) applications with Spring Framework by providing auto-configuration facilities. 
 
-### Setup
+### Setup (Local and Cloud)
 
-##### In order to run this project on local machine :
+### Run this project on local machine :
  
  1. Login to your [GCP(Google Cloud Platform) account](https://cloud.google.com/). 
 
@@ -34,7 +34,7 @@ Cloud Run and Cloud Datastore platforms.
     mvn spring-boot:run
     ``` 
     
-##### In order to run this project on Cloud Run : 
+### Run this project on Cloud Run : 
 Follow first 5 steps above and run following command
  ``` sh
 mvn jib:build
@@ -48,30 +48,30 @@ You dont need Docker installed on your machine since we have [jib](https://githu
 It is a great way to containerize your Java application. It allows you to create optimized images without Docker using Maven or Gradle.
 
 
-### Endpoints
+## Endpoints
 
-Get all records (HTTP : GET)
-{YOUR_CLOUDRUN_SERVICE_URL}/api/todo/all
+<b>Get all records (HTTP : GET)</b>
+<p>{YOUR_CLOUDRUN_SERVICE_URL}/api/todo/all</p>
 
-Get single record (HTTP : GET)
-{YOUR_CLOUDRUN_SERVICE_URL}/api/todo/get/{id}
+<b>Get single record (HTTP : GET)</b>
+<p>{YOUR_CLOUDRUN_SERVICE_URL}/api/todo/get/{id}</p>
 
-Save new record (HTTP : POST)
-{YOUR_CLOUDRUN_SERVICE_URL}/api/todo/save
+<b>Save new record (HTTP : POST)</b>
+<p>{YOUR_CLOUDRUN_SERVICE_URL}/api/todo/save</p>
 
-Update single record (HTTP : POST)
-{YOUR_CLOUDRUN_SERVICE_URL}/api/todo/update
+<b>Update single record (HTTP : POST)</b>
+<p>{YOUR_CLOUDRUN_SERVICE_URL}/api/todo/update</p>
 
-Delete single record (HTTP : GET)
-{YOUR_CLOUDRUN_SERVICE_URL}/api/todo/delete/{id}
+<b>Delete single record (HTTP : GET)</b>
+<p>{YOUR_CLOUDRUN_SERVICE_URL}/api/todo/delete/{id}</p>
 
 Any Questions?
 
 If you have any questions feel free to contact. 
-I will be writing a detailed blog for my overall cloud run experience
-Follow me on twitter: [mr_genco](https://twitter.com/mr_genco)
+I will be writing a detailed blog post in the next days for Cloud Run and Spring.
+If you dont miss it follow me on twitter :) [mr_genco](https://twitter.com/mr_genco) 
 
-TODOS : 
-1. Add a UI
-2. Secure the endpoints with [Okta](https://developer.okta.com/)
+###TODOS : 
+-  Add a UI (VueJS)
+-  Secure the endpoints with [Okta](https://developer.okta.com/)
 
