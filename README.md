@@ -71,7 +71,7 @@ If you have any questions feel free to contact.
 I will be writing a detailed blog post in the next days for Cloud Run and Spring.
 If you dont miss it follow me on twitter :) [mr_genco](https://twitter.com/mr_genco) 
 
-###TODOS : 
+### TODOS : 
 -  Add a UI (VueJS)
 -  Secure the endpoints with [Okta](https://developer.okta.com/)
 
