@@ -63,13 +63,13 @@ It is a great way to containerize your Java application. It allows you to create
 <b>Delete single record (HTTP : GET)</b>
 <p>{YOUR_CLOUDRUN_SERVICE_URL}/api/todo/delete/{id}</p>
 
-Any Questions?
-
-If you have any questions feel free to contact. 
-I will be writing a detailed blog post in the next days for Cloud Run and Spring.
-If you dont miss it follow me on twitter :) [mr_genco](https://twitter.com/mr_genco) 
-
 ### TODOS : 
 -  Add a UI (VueJS)
 -  Secure the endpoints with [Okta](https://developer.okta.com/)
+
+
+#### Any Questions?
+If you have any questions feel free to contact me. 
+I will be writing a detailed blog post in the next few days about Cloud Run and Spring.
+If you dont want to miss it, you should follow me on twitter :) [mr_genco](https://twitter.com/mr_genco) 
 
