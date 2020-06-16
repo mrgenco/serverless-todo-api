@@ -1,6 +1,7 @@
 package com.mrg.todoapp;
 
 import com.google.common.collect.Lists;
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -10,23 +11,20 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@RequestMapping("/api/todo")
+@RequiredArgsConstructor
 public class ToDoController {
 
     private final ToDoRepository repository;
 
-    @Autowired
-    public ToDoController(ToDoRepository repository) {
-        this.repository = repository;
-    }
-
-    @GetMapping("/api/todo/all")
+    @GetMapping("/all")
     public List<ToDoModel> getAllTodos() {
         Iterable<ToDoModel> todos = this.repository.findAll();
         return Lists.newArrayList(todos);
     }
 
 
-    @GetMapping("/api/todo/get/{id}")
+    @GetMapping("/get/{id}")
     public ToDoModel getTodo(@PathVariable Long id) {
         Optional<ToDoModel> todoModel = this.repository.findById(id);
         if (todoModel.isPresent()) {
@@ -37,12 +35,12 @@ public class ToDoController {
 
     }
 
-    @PostMapping("/api/todo/save")
+    @PostMapping("/save")
     public ToDoModel saveTodo(@RequestBody ToDoModel todo) {
         return this.repository.save(todo);
     }
 
-    @PostMapping("/api/todo/update")
+    @PostMapping("/update")
     public ToDoModel updateTodo(@RequestBody ToDoModel todo) {
         Optional<ToDoModel> todoModel = this.repository.findById(todo.getId());
         if (todoModel.isPresent()) {
@@ -52,7 +50,7 @@ public class ToDoController {
         }
     }
 
-    @GetMapping("/api/todo/delete/{id}")
+    @GetMapping("/delete/{id}")
     public void deleteTodo(@PathVariable Long id) {
         Optional<ToDoModel> todoModel = this.repository.findById(id);
         if (todoModel.isPresent()) {
