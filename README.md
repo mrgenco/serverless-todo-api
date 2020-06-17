@@ -1,5 +1,3 @@
-# serverless-todo-api
-
 ### Background
 I created this simple SpringBoot application for experimenting
 Cloud Run and Cloud Datastore platforms.
