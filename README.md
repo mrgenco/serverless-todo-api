@@ -6,7 +6,7 @@ Cloud Run and Cloud Datastore platforms.
 
 [Cloud Datastore](https://cloud.google.com/datastore) is a NoSQL document database built for automatic scaling, high performance, and ease of application development.
 
-[Spring Cloud GCP](https://spring.io/projects/spring-cloud-gcp)  helps a lot while developing Google Cloud Platform (GCP) applications with Spring Framework by providing auto-configuration facilities. 
+[Spring Cloud GCP](https://spring.io/projects/spring-cloud-gcp) is one of the sub projects of Spring Cloud providing tools for developers to quickly build some of the common patterns in distributed systems (e.g. configuration management, service discovery). It helped me a lot while developing Google Cloud Platform (GCP) applications with Spring Framework by providing auto-configuration facilities. 
 
 ### Setup for local machine :
  
