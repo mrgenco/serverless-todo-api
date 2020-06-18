@@ -66,8 +66,6 @@ It is a great way to containerize your Java application. It allows you to create
 -  Secure the endpoints with [Okta](https://developer.okta.com/)
 
 
-#### Any Questions?
-If you have any questions feel free to contact me. 
-I will be writing a detailed blog post in the next few days about Cloud Run and Spring.
-If you dont want to miss it, you should follow me on twitter :) [mr_genco](https://twitter.com/mr_genco) 
+#### Any Questions or Want to be Friends?
+Feel free to contact me on github or follow me on [twitter] (https://twitter.com/mr_genco). :)
 
